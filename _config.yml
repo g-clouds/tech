@@ -6,3 +6,7 @@ url: https://g-clouds.github.io/tech
 
 aux_links:
   Template Repository: https://github.com/g-clouds/tech
+
+heading_anchors: true
+enable_copy_code_button: true
+nav_enabled: true

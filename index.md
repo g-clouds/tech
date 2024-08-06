@@ -1,35 +1,141 @@
 ---
+layout: default
 title: Home
-layout: home
+nav_order: 1
+---
+## Google Cloud Certified Professional Machine Learning Engineer Exam Guide
+
+This document outlines the key areas and considerations for the Google Cloud Certified Professional Machine Learning Engineer exam.
+
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+**Section 1: Architecting low-code ML solutions (~12% of the exam)**
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+**1.1 Developing ML models using BigQuery ML**
 
-More specifically, the created site:
+* Building the appropriate BigQuery ML model (e.g., linear and binary classification, regression, time-series, matrix factorization, boosted trees, autoencoders) based on the business problem.
+* Feature engineering or selection using BigQuery ML.
+* Generating predictions using BigQuery ML.
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+**1.2 Building AI solutions using ML APIs**
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+* Building applications using ML APIs (e.g., Cloud Vision API, Natural Language API, Cloud Speech API, Translation).
+* Building applications using industry-specific APIs (e.g., Document AI API, Retail API).
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+**1.3 Training models using AutoML**
 
-To get started with creating a site, simply:
+* Preparing data for AutoML (e.g., feature selection, data labeling, Tabular Workflows on AutoML).
+* Using available data (e.g., tabular, text, speech, images, videos) to train custom models.
+* Using AutoML for tabular data.
+* Creating forecasting models using AutoML.
+* Configuring and debugging trained models.
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+---
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+**Section 2: Collaborating within and across teams to manage data and models (~16% of the exam)**
 
-----
+**2.1 Exploring and preprocessing organization-wide data** (e.g., Cloud Storage, BigQuery, Spanner, Cloud SQL, Apache Spark, Apache Hadoop)
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+* Organizing different types of data (e.g., tabular, text, speech, images, videos) for efficient training.
+* Managing datasets in Vertex AI.
+* Data preprocessing (e.g., Dataflow, TensorFlow Extended [TFX], BigQuery).
+* Creating and consolidating features in Vertex AI Feature Store.
+* Privacy implications of data usage and/or collection (e.g., handling sensitive data such as personally identifiable information [PII] and protected health information [PHI]).
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+**2.2 Model prototyping using Jupyter notebooks**
+
+* Choosing the appropriate Jupyter backend on Google Cloud (e.g., Vertex AI Workbench, notebooks on Dataproc).
+* Applying security best practices in Vertex AI Workbench.
+* Using Spark kernels.
+* Integration with code source repositories.
+* Developing models in Vertex AI Workbench using common frameworks (e.g., TensorFlow, PyTorch, sklearn, Spark, JAX).
+
+**2.3 Tracking and running ML experiments**
+
+* Choosing the appropriate Google Cloud environment for development and experimentation (e.g., Vertex AI Experiments, Kubeflow Pipelines, Vertex AI TensorBoard with TensorFlow and PyTorch) given the framework.
+
+---
+
+**Section 3: Scaling prototypes into ML models (~18% of the exam)**
+
+**3.1 Building models**
+
+* Choosing ML framework and model architecture.
+* Modeling techniques given interpretability requirements.
+
+**3.2 Training models**
+
+* Organizing training data (e.g., tabular, text, speech, images, videos) on Google Cloud (e.g., Cloud Storage, BigQuery).
+* Ingestion of various file types (e.g., CSV, JSON, images, Hadoop, databases) into training.
+* Training using different SDKs (e.g., Vertex AI custom training, Kubeflow on Google Kubernetes Engine, AutoML, tabular workflows).
+* Using distributed training to organize reliable pipelines.
+* Hyperparameter tuning.
+* Troubleshooting ML model training failures.
+
+**3.3 Choosing appropriate hardware for training**
+
+* Evaluation of compute and accelerator options (e.g., CPU, GPU, TPU, edge devices).
+* Distributed training with TPUs and GPUs (e.g., Reduction Server on Vertex AI, Horovod).
+
+---
+
+**Section 4: Serving and scaling models (~19% of the exam)**
+
+**4.1 Serving models**
+
+* Batch and online inference (e.g., Vertex AI, Dataflow, BigQuery ML, Dataproc).
+* Using different frameworks (e.g., PyTorch, XGBoost) to serve models.
+* Organizing a model registry.
+* A/B testing different versions of a model.
+
+**4.2 Scaling online model serving**
+
+* Vertex AI Feature Store.
+* Vertex AI public and private endpoints.
+* Choosing appropriate hardware (e.g., CPU, GPU, TPU, edge).
+* Scaling the serving backend based on the throughput (e.g., Vertex AI Prediction, containerized serving).
+* Tuning ML models for training and serving in production (e.g., simplification techniques, optimizing the ML solution for increased performance, latency, memory, throughput).
+
+---
+
+**Section 5: Automating and orchestrating ML pipelines (~21% of the exam)**
+
+**5.1 Developing end-to-end ML pipelines**
+
+* Data and model validation.
+* Ensuring consistent data preprocessing between training and serving.
+* Hosting third-party pipelines on Google Cloud (e.g., MLFlow).
+* Identifying components, parameters, triggers, and compute needs (e.g., Cloud Build, Cloud Run).
+* Orchestration framework (e.g., Kubeflow Pipelines, Vertex AI Pipelines, Cloud Composer).
+* Hybrid or multicloud strategies.
+* System design with TFX components or Kubeflow DSL (e.g., Dataflow).
+
+**5.2 Automating model retraining**
+
+* Determining an appropriate retraining policy.
+* Continuous integration and continuous delivery (CI/CD) model deployment (e.g., Cloud Build, Jenkins).
+
+**5.3 Tracking and auditing metadata**
+
+* Tracking and comparing model artifacts and versions (e.g., Vertex AI Experiments, Vertex ML Metadata).
+* Hooking into model and dataset versioning.
+* Model and data lineage.
+
+---
+
+**Section 6: Monitoring ML solutions (~14% of the exam)**
+
+**6.1 Identifying risks to ML solutions**
+
+* Building secure ML systems (e.g., protecting against unintentional exploitation of data or models, hacking).
+* Aligning with Google's Responsible AI practices (e.g., biases).
+* Assessing ML solution readiness (e.g., data bias, fairness).
+* Model explainability on Vertex AI (e.g., Vertex AI Prediction).
+
+**6.2 Monitoring, testing, and troubleshooting ML solutions**
+
+* Establishing continuous evaluation metrics (e.g., Vertex AI Model Monitoring, Explainable AI).
+* Monitoring for training-serving skew.
+* Monitoring for feature attribution drift.
+* Monitoring model performance against baselines, simpler models, and across the time dimension.
+* Common training and serving errors. 
