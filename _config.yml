@@ -6,7 +6,9 @@ baseurl: "/tech"
 url: "https://g-clouds.github.io/tech"
 
 aux_links:
-  Template Repository: https://github.com/g-clouds/tech
+  "gClouds Web Site":
+    - "//www.gclouds.co.uk"
+aux_links_new_tab: true
 
 heading_anchors: true
 enable_copy_code_button: true
@@ -17,3 +19,5 @@ mermaid:
   # Version of mermaid library
   # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
   version: "10.9.1"
+
+footer_content: "Copyright © 2024  |  <a href='https://www.gclouds.co.uk'>gClouds</a> . All rights reserved."
