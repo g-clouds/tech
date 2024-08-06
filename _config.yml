@@ -1,8 +1,9 @@
 title: Tech Docs
 description: gClouds Tech Documents
 theme: just-the-docs
-
-url: https://g-clouds.github.io/tech
+domain: g-clouds.github.io
+baseurl: "/tech"
+url: "https://g-clouds.github.io/tech"
 
 aux_links:
   Template Repository: https://github.com/g-clouds/tech
