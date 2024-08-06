@@ -11,3 +11,9 @@ aux_links:
 heading_anchors: true
 enable_copy_code_button: true
 nav_enabled: true
+
+logo: "/assets/images/gclouds.png"
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "10.9.1"
