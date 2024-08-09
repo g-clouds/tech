@@ -1,9 +1,9 @@
-title: Tech Docs
+title: PMLE
 description: gClouds Tech Documents
 theme: just-the-docs
 domain: g-clouds.github.io
-baseurl: "/tech"
-url: "https://g-clouds.github.io/tech"
+baseurl: "/ml"
+url: "https://docs.gclouds.co.uk"
 
 aux_links:
   "gClouds Web Site":
