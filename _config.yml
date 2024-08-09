@@ -1,8 +1,23 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: PMLE
+description: gClouds Tech Documents
 theme: just-the-docs
-
-url: https://just-the-docs.github.io
+domain: g-clouds.github.io
+#baseurl: ""
+url: "https://docs.gclouds.co.uk"
 
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  "gClouds Home":
+    - "//www.gclouds.co.uk"
+aux_links_new_tab: true
+
+heading_anchors: true
+enable_copy_code_button: true
+nav_enabled: true
+
+logo: "/assets/images/gclouds.png"
+mermaid:
+  # Version of mermaid library
+  # Pick an available version from https://cdn.jsdelivr.net/npm/mermaid/
+  version: "10.9.1"
+
+footer_content: "Copyright © 2024  |  <a href='https://www.gclouds.co.uk'>gClouds</a> . All rights reserved."
